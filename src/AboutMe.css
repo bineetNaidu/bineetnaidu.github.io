@@ -117,3 +117,12 @@
   bottom: -5px;
   left: -5px;
 }
+
+@media (max-width: 655px) {
+  .aboutMe {
+    flex-direction: column;
+  }
+  .aboutMe__right {
+    margin-top: 5vh;
+  }
+}
