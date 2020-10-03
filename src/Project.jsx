@@ -6,16 +6,16 @@ import LinkIcon from '@material-ui/icons/Link';
 // Statics
 import './Project.css';
 
-const Project = () => {
+const Project = ({ name, github, url, image }) => {
   return (
     <motion.div layout className="project">
       <div className="project__info">
-        <h4>Netflix Clone</h4>
+        <h4>{name}</h4>
         <div className="project__details">
-          <a href="#">
+          <a href={url}>
             <LinkIcon />
           </a>
-          <a href="#">
+          <a href={github}>
             <CodeIcon />
           </a>
         </div>
@@ -23,8 +23,8 @@ const Project = () => {
       <motion.img
         whileHover={{ scale: 1.15 }}
         className="project__image"
-        src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-        alt="project's screenshot"
+        src={image}
+        alt={`${name}'s project's screenshot`}
       />
     </motion.div>
   );
