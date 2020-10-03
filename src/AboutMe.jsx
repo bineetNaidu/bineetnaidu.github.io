@@ -61,7 +61,7 @@ const AboutMe = () => {
         <img
           className="aboutMe__img"
           src="https://avatars0.githubusercontent.com/u/66471461?v=4"
-          alt="Profile Image"
+          alt="Profile IMG"
         />
         <div className="aboutMe__prefs">
           <h4>

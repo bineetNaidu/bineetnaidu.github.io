@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import AboutMe from './AboutMe';
 import ProjectLists from './ProjectLists';
+import Footer from './Footer';
 
 // Statics
 import './App.css';
@@ -12,7 +13,7 @@ function App() {
       <Header />
       <AboutMe />
       <ProjectLists />
-      {/* Footer */}
+      <Footer />
     </div>
   );
 }
