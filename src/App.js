@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import AboutMe from './AboutMe';
 
 // Statics
 import './App.css';
@@ -10,6 +11,7 @@ function App() {
       {/* Header */}
       <Header />
       {/* Aboutme */}
+      <AboutMe />
       {/* Projects */}
       {/* Footer */}
     </div>
