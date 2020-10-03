@@ -31,7 +31,13 @@ const containerVariants = {
 const ProjectLists = () => {
   return (
     <>
-      <h3 className="project__title">#Some of my Projects</h3>
+      <motion.h3
+        initial={{ x: '-50vw', opacity: '0' }}
+        animate={{ x: '0', opacity: '1', transition: { delay: 1.8 } }}
+        className="project__title"
+      >
+        #Some of my Projects
+      </motion.h3>
       <motion.div
         variants={containerVariants}
         initial="initial"
