@@ -2,6 +2,7 @@
   border-radius: 15px;
   height: 200px;
   width: 350px;
+  z-index: 5;
   position: relative;
   overflow: hidden;
   margin: 1rem auto;

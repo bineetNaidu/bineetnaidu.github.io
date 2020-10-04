@@ -6,15 +6,19 @@ import Footer from './Footer';
 import TechStacks from './TechStacks';
 import { motion } from 'framer-motion';
 import Particles from 'react-particles-js';
+import { useStateValue } from './contexts/state.context';
 
 // Statics
 import './App.css';
 
 function App() {
+  // Contexts
+  const [{ body }] = useStateValue();
+
   return (
-    <motion.div layout className="app">
+    <motion.div layout className="app" style={{ background: body }}>
       <Particles
-        style={{ position: 'absolute', zIndex: '-100' }}
+        style={{ position: 'absolute', zIndex: '0' }}
         params={{
           particles: {
             number: {

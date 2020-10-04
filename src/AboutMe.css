@@ -73,7 +73,7 @@
 }
 
 .preview__shadow {
-  background-color: #2b202f;
+  /* background-color: #2b202f; */
   max-width: 300px;
   height: 205px;
   padding-left: 30px;

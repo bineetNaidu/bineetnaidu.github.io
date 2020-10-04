@@ -1,6 +1,7 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
+import { useStateValue } from './contexts/state.context';
 
 // Statics
 import './AboutMe.css';
@@ -50,6 +51,8 @@ const themeVariants = {
 };
 
 const AboutMe = () => {
+  // Contexts
+  const [{ container }] = useStateValue();
   return (
     <motion.div
       className="aboutMe"
@@ -103,7 +106,7 @@ const AboutMe = () => {
       </motion.div>
 
       <motion.div variants={rightVariant} className="aboutMe__right">
-        <div className="preview__shadow">
+        <div className="preview__shadow" style={{ background: container }}>
           <motion.div
             className="preview"
             drag
