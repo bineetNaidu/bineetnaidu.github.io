@@ -3,18 +3,21 @@ import Header from './Header';
 import AboutMe from './AboutMe';
 import ProjectLists from './ProjectLists';
 import Footer from './Footer';
+import TechStacks from './TechStacks';
+import { motion } from 'framer-motion';
 
 // Statics
 import './App.css';
 
 function App() {
   return (
-    <div className="app">
+    <motion.div layout className="app">
       <Header />
       <AboutMe />
+      <TechStacks />
       <ProjectLists />
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 

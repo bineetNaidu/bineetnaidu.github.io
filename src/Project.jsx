@@ -8,19 +8,24 @@ import './Project.css';
 
 const Project = ({ name, github, url, image }) => {
   return (
-    <motion.div
-      layout
-      className="project"
-      initial={{ boxShadow: '0' }}
-      animate={{ boxShadow: '3px 2px 29px 5px rgba(0,0,0,0.75)' }}
-    >
+    <motion.div layout className="project">
       <div className="project__info">
         <h4>{name}</h4>
         <div className="project__details">
-          <a href={url} target="_blank">
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Web Link"
+          >
             <LinkIcon />
           </a>
-          <a href={github} target="_blank">
+          <a
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Source Code"
+          >
             <CodeIcon />
           </a>
         </div>
