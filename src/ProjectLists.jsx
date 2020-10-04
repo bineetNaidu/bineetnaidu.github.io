@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import Project from './Project';
 import { motion } from 'framer-motion';
 
@@ -104,4 +104,4 @@ const ProjectLists = () => {
   );
 };
 
-export default ProjectLists;
+export default memo(ProjectLists);

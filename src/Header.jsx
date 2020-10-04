@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -51,4 +51,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default memo(Header);

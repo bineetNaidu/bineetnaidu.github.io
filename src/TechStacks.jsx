@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { motion } from 'framer-motion';
 
 // Statics
@@ -44,7 +44,7 @@ const TechStacks = () => {
       initial="initial"
       animate="animate"
     >
-      <h3>#Tech that I Use</h3>
+      <h3>#Techs that I Use</h3>
 
       <div className="techs__lists">
         <motion.img
@@ -135,4 +135,4 @@ const TechStacks = () => {
   );
 };
 
-export default TechStacks;
+export default memo(TechStacks);

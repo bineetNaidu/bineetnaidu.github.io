@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
 import { useStateValue } from './contexts/state.context';
@@ -145,4 +145,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default memo(AboutMe);
