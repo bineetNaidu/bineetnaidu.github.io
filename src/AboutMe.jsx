@@ -2,7 +2,7 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
 import { useStateValue } from './contexts/state.context';
-
+import { mainTheme, primaryTheme, secondaryTheme } from './contexts/reducer';
 // Statics
 import './AboutMe.css';
 
@@ -52,7 +52,7 @@ const themeVariants = {
 
 const AboutMe = () => {
   // Contexts
-  const [{ container }] = useStateValue();
+  const [{ container }, dispatch] = useStateValue();
   return (
     <motion.div
       className="aboutMe"
@@ -88,17 +88,24 @@ const AboutMe = () => {
             ></motion.div>
             <motion.div
               whileHover={{ scale: 1.2 }}
+              onClick={() => dispatch({ type: 'SET_THEME', theme: mainTheme })}
               variants={themeVariants}
               className="theme__dark"
             ></motion.div>
             <motion.div
               whileHover={{ scale: 1.2 }}
+              onClick={() =>
+                dispatch({ type: 'SET_THEME', theme: secondaryTheme })
+              }
               variants={themeVariants}
               className="theme__purple"
             ></motion.div>
             <motion.div
               whileHover={{ scale: 1.2 }}
               variants={themeVariants}
+              onClick={() =>
+                dispatch({ type: 'SET_THEME', theme: primaryTheme })
+              }
               className="theme__green"
             ></motion.div>
           </div>

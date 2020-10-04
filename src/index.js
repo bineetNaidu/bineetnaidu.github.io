@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import reducer, { primaryTheme } from './contexts/reducer';
+import reducer, { mainTheme } from './contexts/reducer';
 import { StateProvider } from './contexts/state.context';
 
 // Statics
@@ -10,7 +10,7 @@ import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <StateProvider initialState={primaryTheme} reducer={reducer}>
+    <StateProvider initialState={mainTheme} reducer={reducer}>
       <App />
     </StateProvider>
   </React.StrictMode>,

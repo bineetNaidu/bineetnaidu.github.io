@@ -18,9 +18,9 @@ export const primaryTheme = {
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'SET_USER':
+    case 'SET_THEME':
       return {
-        theme: action.theme,
+        ...action.theme,
       };
 
     default:
