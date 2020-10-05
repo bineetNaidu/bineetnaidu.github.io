@@ -59,7 +59,7 @@
 }
 
 .aboutMe__prefs .theme .theme__purple {
-  background: rgb(65, 7, 52);
+  background: #432a9e;
 }
 
 .aboutMe__prefs .theme .theme__green {
@@ -124,5 +124,18 @@
   }
   .aboutMe__right {
     margin-top: 5vh;
+  }
+
+  .aboutMe__img {
+    width: 35vw;
+    height: 28vh;
+    object-fit: cover;
+    background-position: center center;
+  }
+}
+
+@media (max-width: 360px) {
+  .preview {
+    transform: translateX(-9%);
   }
 }

@@ -24,6 +24,11 @@
   }
 
   .techs__img {
-    margin: 0 0.5rem;
+    margin: 0.5rem;
+  }
+
+  .techs > h3 {
+    margin: 5vh auto;
+    text-align: center;
   }
 }
