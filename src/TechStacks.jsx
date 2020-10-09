@@ -73,7 +73,7 @@ const TechStacks = () => {
           alt="Redux"
           variants={imgVariants}
           title="Redux"
-          src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png"
+          src="https://profilinator.rishav.dev/skills-assets/redux-original.svg"
         />
         <motion.img
           className="techs__img"
@@ -87,7 +87,7 @@ const TechStacks = () => {
           alt="MongoDB"
           title="MongoDB"
           variants={imgVariants}
-          src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
+          src="https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg"
         />
         <motion.img
           className="techs__img"
@@ -115,7 +115,7 @@ const TechStacks = () => {
           alt="git"
           title="Git"
           variants={imgVariants}
-          src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
+          src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg"
         />
         <motion.img
           className="techs__img"
@@ -129,6 +129,20 @@ const TechStacks = () => {
           title="DevOps"
           variants={imgVariants}
           src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png"
+        />
+          <motion.img
+          className="techs__img"
+          alt="NodeJs"
+          title="NodeJs"
+          variants={imgVariants}
+          src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg"
+        />
+          <motion.img
+          className="techs__img"
+          alt="GCP"
+          title="GCP"
+          variants={imgVariants}
+          src="https://profilinator.rishav.dev/skills-assets/google_cloud-icon.svg"
         />
       </div>
     </motion.div>

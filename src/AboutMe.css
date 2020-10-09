@@ -22,6 +22,7 @@
   height: 100%;
   width: 100%;
   flex: 1;
+  z-index: 1;
 }
 
 .aboutMe__prefs {
@@ -50,7 +51,7 @@
 }
 
 .aboutMe__prefs .theme .theme__dark {
-  background: #000;
+  background: #040a21;
 }
 
 .aboutMe__prefs .theme .theme__white {
