@@ -79,6 +79,7 @@
   height: 205px;
   padding-left: 30px;
   padding-top: 30px;
+  transition: background-color 1.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .preview {

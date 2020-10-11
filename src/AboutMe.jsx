@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
 import { useStateValue } from './contexts/state.context';
-import { mainTheme, primaryTheme, secondaryTheme } from './contexts/reducer';
+import { mainTheme, primaryTheme, secondaryTheme, lightTheme } from './contexts/reducer';
 // Statics
 import './AboutMe.css';
 
@@ -84,6 +84,7 @@ const AboutMe = () => {
             <motion.div
               whileHover={{ scale: 1.2 }}
               variants={themeVariants}
+              onClick={() => dispatch({ type: 'SET_THEME', theme: lightTheme })}
               className="theme__white"
             ></motion.div>
             <motion.div

@@ -16,6 +16,12 @@ export const primaryTheme = {
   footer: '#111d10',
 };
 
+export const lightTheme = {
+  body: "rgb(90 88 85)",
+  container: "rgb(64 64 64)",
+  footer: "rgb(60 59 64)"
+}
+
 const reducer = (state, action) => {
   switch (action.type) {
     case 'SET_THEME':
