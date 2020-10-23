@@ -15,7 +15,7 @@ const Footer = () => {
       className="footer"
       style={{ background: footer }}
     >
-      <p>© 2020 Bineet Naidu. No rights reserved</p>
+      <p>© 2020 Bineet Naidu</p>
     </motion.div>
   );
 };

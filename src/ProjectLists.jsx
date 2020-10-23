@@ -2,23 +2,10 @@ import React, { memo } from 'react';
 import Project from './Project';
 import { motion } from 'framer-motion';
 import { projects } from './data/projects.data';
-
 // Statics
 import './ProjectLists.css';
-
 // Variants
-
-const containerVariants = {
-  initial: {
-    opacity: 0,
-    scale: 0,
-  },
-  animate: {
-    opacity: 1,
-    transition: { delay: 2 },
-    scale: 1,
-  },
-};
+import { containerVariants } from './variants/projectList.variants';
 
 const ProjectLists = () => {
   return (

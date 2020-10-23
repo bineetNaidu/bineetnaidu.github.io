@@ -2,7 +2,7 @@ import covid19 from '../images/covid19.png';
 import fb from '../images/fb.png';
 import firegram from '../images/firegram.png';
 import hulu from '../images/hulu.png';
-import instagram from '../images/instagram.png';
+import maplify from '../images/maplify.png';
 import messenger from '../images/messenger.png';
 import netflixClone from '../images/netflixClone.png';
 import uiColors from '../images/uiColors.png';
@@ -40,10 +40,10 @@ export const projects = [
     github: 'https://github.com/bineetNaidu/hulu-clone',
   },
   {
-    image: instagram,
-    url: 'https://bineet-instagram-clone.web.app/',
-    name: 'Instagram Clone',
-    github: 'https://github.com/bineetNaidu/instagram-clone',
+    image: maplify,
+    url: 'https://maplify.vercel.app/',
+    name: 'Maplify',
+    github: 'https://github.com/bineetNaidu/maplify',
   },
   {
     image: firegram,
