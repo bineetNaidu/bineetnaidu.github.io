@@ -18,6 +18,7 @@ const TechStacks = () => {
       <div className="techs__lists">
         {techs.map((t) => (
           <motion.img
+            key={t.name}
             variants={imgVariants}
             className="techs__img"
             alt={t.name}
