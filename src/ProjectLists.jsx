@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import Project from './Project';
 import { motion } from 'framer-motion';
-import { projects } from "./data/projects.data";
+import { projects } from './data/projects.data';
 
 // Statics
 import './ProjectLists.css';
@@ -37,16 +37,15 @@ const ProjectLists = () => {
         layout
         className="projectsLists"
       >
-        {projects.map(p => (
+        {projects.map((p) => (
           <Project
             key={p.name}
-          image={p.image}
-          github={p.github}
-          name={p.name}
-          url={p.url}
+            image={p.image}
+            github={p.github}
+            name={p.name}
+            url={p.url}
           />
-          ))}
-      
+        ))}
       </motion.div>
     </>
   );
