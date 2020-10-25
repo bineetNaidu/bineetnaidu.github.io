@@ -19,7 +19,7 @@ import {
 
 const AboutMe = () => {
   // Contexts
-  const [{ container }, dispatch] = useStateValue();
+  const [{ container, preview }, dispatch] = useStateValue();
   return (
     <motion.div
       className="aboutMe"
@@ -78,6 +78,7 @@ const AboutMe = () => {
             drag
             dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
             dragElastic={0.7}
+            style={{ background: preview }}
           >
             <div className="corner corner__tl"></div>
             <div className="corner corner__tr"></div>
