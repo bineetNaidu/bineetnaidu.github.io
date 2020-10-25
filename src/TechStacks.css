@@ -17,7 +17,7 @@
   object-fit: contain;
 }
 
-@media (max-width: 655px) {
+@media (max-width: 855px) {
   .techs__lists {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -25,6 +25,7 @@
 
   .techs__img {
     margin: 0.5rem;
+    flex: 0.1;
   }
 
   .techs > h3 {

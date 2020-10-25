@@ -24,7 +24,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 575px) {
   .header__ctx {
     width: 30vw;
   }
