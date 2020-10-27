@@ -1,0 +1,31 @@
+.header {
+  padding: 2em 3vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title {
+  font-weight: 300;
+}
+
+.header__ctx {
+  width: 15vw;
+  display: flex;
+  justify-content: space-between;
+}
+.MuiSvgIcon-root {
+  cursor: pointer;
+  color: white;
+}
+
+@media (min-width: 1000px) {
+  .header__ctx {
+    width: 10vw;
+  }
+}
+
+@media (max-width: 575px) {
+  .header__ctx {
+    width: 30vw;
+  }
+}
