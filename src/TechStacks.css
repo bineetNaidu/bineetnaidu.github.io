@@ -1,0 +1,35 @@
+.techs {
+  padding: 0 5vw;
+  margin-bottom: 5vh;
+}
+
+.techs > h3 {
+  margin-bottom: 5vh;
+}
+
+.techs__lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+.techs__img {
+  width: 50px;
+  object-fit: contain;
+}
+
+@media (max-width: 855px) {
+  .techs__lists {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .techs__img {
+    margin: 0.5rem;
+    flex: 0.1;
+  }
+
+  .techs > h3 {
+    margin: 5vh auto;
+    text-align: center;
+  }
+}
