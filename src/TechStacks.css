@@ -17,6 +17,36 @@
   object-fit: contain;
 }
 
+.tech__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech__item > h4 {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 10px;
+  border: 1px solid lightblue;
+  padding: 5px 10px;
+  font-weight: 400;
+  user-select: none;
+}
+
+.tech__item:hover > h4 {
+  opacity: 1;
+  animation: scaleUp 0.1s ease-out;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 @media (max-width: 855px) {
   .techs__lists {
     flex-wrap: wrap;

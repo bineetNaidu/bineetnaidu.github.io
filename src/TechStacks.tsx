@@ -1,10 +1,21 @@
 import React, { memo } from 'react';
 import { motion } from 'framer-motion';
+import {
+  containerVariant,
+  imgVariants as techVariant,
+} from './variants/TechStacks.variants';
+import useFirestore from './hooks/useFirestore';
 // Statics
 import './TechStacks.css';
-import { containerVariant, imgVariants } from './variants/TechStacks.variants';
 
-const TechStacks = () => {
+interface Techs {
+  id: string;
+  name: string;
+  image: string;
+}
+
+const TechStacks: React.FC = () => {
+  const { docs } = useFirestore('techs');
   return (
     <motion.div
       className="techs"
@@ -15,16 +26,18 @@ const TechStacks = () => {
       <h3>#Techs that I Use</h3>
 
       <div className="techs__lists">
-        {/* {techs.map((t) => (
-          <motion.img
-            key={t.name}
-            variants={imgVariants}
-            className="techs__img"
-            alt={t.name}
-            title={t.name}
-            src={t.src}
-          />
-        ))} */}
+        {docs.map((t: Techs) => (
+          <motion.div className="tech__item" variants={techVariant}>
+            <img
+              key={t.name}
+              className="techs__img"
+              alt={t.name}
+              title={t.name}
+              src={t.image}
+            />
+            <h4>{t.name}</h4>
+          </motion.div>
+        ))}
       </div>
     </motion.div>
   );
