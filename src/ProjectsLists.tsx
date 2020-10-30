@@ -7,7 +7,7 @@ import './ProjectLists.css';
 // Variants
 import { containerVariants } from './variants/projectList.variants';
 
-interface Project {
+interface ProjectInterfaces {
   id: string;
   name: string;
   url: string;
@@ -33,7 +33,7 @@ const ProjectLists: React.FC = () => {
         layout
         className="projectsLists"
       >
-        {docs.map((p: Project) => (
+        {docs.map((p: ProjectInterfaces) => (
           <Project
             key={p.id}
             image={p.url}

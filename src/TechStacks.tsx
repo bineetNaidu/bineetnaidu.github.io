@@ -27,9 +27,8 @@ const TechStacks: React.FC = () => {
 
       <div className="techs__lists">
         {docs.map((t: Techs) => (
-          <motion.div className="tech__item" variants={techVariant}>
+          <motion.div className="tech__item" variants={techVariant} key={t.id}>
             <img
-              key={t.name}
               className="techs__img"
               alt={t.name}
               title={t.name}

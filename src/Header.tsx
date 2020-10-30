@@ -25,6 +25,7 @@ const Header = () => {
           initial={{ y: '-100vh', opacity: 0 }}
           animate={{ y: 0, opacity: 0.7, transition: { delay: 0.6 } }}
           whileHover={{ opacity: 1 }}
+          rel="noreferrer"
         >
           <GitHubIcon />
         </motion.a>
@@ -34,6 +35,7 @@ const Header = () => {
           initial={{ y: '-100vh', opacity: 0 }}
           animate={{ y: 0, opacity: 0.7, transition: { delay: 0.8 } }}
           whileHover={{ opacity: 1 }}
+          rel="noreferrer"
         >
           <InstagramIcon />
         </motion.a>
@@ -43,6 +45,7 @@ const Header = () => {
           initial={{ y: '-100vh', opacity: 0 }}
           animate={{ y: 0, opacity: 0.7, transition: { delay: 1 } }}
           whileHover={{ opacity: 1 }}
+          rel="noreferrer"
         >
           <TwitterIcon />
         </motion.a>
