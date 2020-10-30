@@ -16,10 +16,24 @@ import {
   leftVariant,
   rightVariant,
 } from './variants/AboutMe.variants';
+import { projectAnalytics } from './firebase';
+
+interface ThemeInterface {
+  body: string;
+  container: string;
+  footer: string;
+  preview: string;
+}
 
 const AboutMe = () => {
   // Contexts
   const [{ container, preview }, dispatch] = useStateValue();
+
+  const handleThemeChange = (theme: ThemeInterface) => {
+    projectAnalytics.logEvent('theme__prefs', { theme });
+    dispatch({ type: 'SET_THEME', theme });
+  };
+
   return (
     <motion.div
       className="aboutMe"
@@ -42,20 +56,18 @@ const AboutMe = () => {
             <motion.div
               whileHover={{ scale: 1.2 }}
               variants={themeVariants}
-              onClick={() => dispatch({ type: 'SET_THEME', theme: lightTheme })}
+              onClick={() => handleThemeChange(lightTheme)}
               className="theme__white"
             ></motion.div>
             <motion.div
               whileHover={{ scale: 1.2 }}
-              onClick={() => dispatch({ type: 'SET_THEME', theme: mainTheme })}
+              onClick={() => handleThemeChange(mainTheme)}
               variants={themeVariants}
               className="theme__dark"
             ></motion.div>
             <motion.div
               whileHover={{ scale: 1.2 }}
-              onClick={() =>
-                dispatch({ type: 'SET_THEME', theme: secondaryTheme })
-              }
+              onClick={() => handleThemeChange(secondaryTheme)}
               variants={themeVariants}
               className="theme__purple"
             ></motion.div>
