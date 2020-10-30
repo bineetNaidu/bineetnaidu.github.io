@@ -5,6 +5,7 @@ import { useStateValue } from './context/State.context';
 import Footer from './Footer';
 import AboutMe from './AboutMe';
 import TechStacks from './TechStacks';
+import ProjectsLists from './ProjectsLists';
 // Statics
 import './App.css';
 
@@ -16,6 +17,7 @@ const App: React.FC = () => {
       <Header />
       <AboutMe />
       <TechStacks />
+      <ProjectsLists />
       <Footer />
     </motion.div>
   );
