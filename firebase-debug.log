@@ -1,0 +1,14 @@
+[debug] [2020-10-30T17:59:03.240Z] ----------------------------------------------------------------------
+[debug] [2020-10-30T17:59:03.247Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting:bineetnaidu
+[debug] [2020-10-30T17:59:03.248Z] CLI Version:   8.13.1
+[debug] [2020-10-30T17:59:03.248Z] Platform:      linux
+[debug] [2020-10-30T17:59:03.248Z] Node Version:  v14.13.0
+[debug] [2020-10-30T17:59:03.250Z] Time:          Fri Oct 30 2020 23:29:03 GMT+0530 (India Standard Time)
+[debug] [2020-10-30T17:59:03.250Z] ----------------------------------------------------------------------
+[debug] [2020-10-30T17:59:03.250Z] 
+[debug] [2020-10-30T17:59:03.280Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-30T17:59:03.282Z] > authorizing via signed-in user
+[debug] [2020-10-30T17:59:03.283Z] [iam] checking project portfolio-72d9f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-30T17:59:03.288Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-10-30T17:59:03.289Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
