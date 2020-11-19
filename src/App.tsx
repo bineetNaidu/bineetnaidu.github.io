@@ -1,25 +1,25 @@
 import React from 'react';
-import Header from './Header';
-import { motion } from 'framer-motion';
-import { useStateValue } from './context/State.context';
-import Footer from './Footer';
-import AboutMe from './AboutMe';
-import TechStacks from './TechStacks';
-import ProjectsLists from './ProjectsLists';
+import { AnimatePresence } from 'framer-motion';
+import { Route, Switch, useLocation } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Works from './pages/Works';
 // Statics
 import './App.css';
 
 const App: React.FC = () => {
-  // Contexts
-  const [{ body }] = useStateValue();
+  const location = useLocation();
   return (
-    <motion.div layout className="app" style={{ background: body }}>
-      <Header />
-      <AboutMe />
-      <TechStacks />
-      <ProjectsLists />
-      <Footer />
-    </motion.div>
+    <div className="app">
+      <Switch>
+        <AnimatePresence>
+          <Route exact path="/" key={location.hash} component={Home} />
+          <Route exact path="/en" key={location.hash} component={Home} />
+          <Route exact path="/about" key={location.hash} component={About} />
+          <Route exact path="/works" key={location.hash} component={Works} />
+        </AnimatePresence>
+      </Switch>
+    </div>
   );
 };
 
