@@ -16,7 +16,7 @@ import {
   leftVariant,
   rightVariant,
 } from './variants/AboutMe.variants';
-import { projectAnalytics } from './firebase';
+// import { projectAnalytics } from './firebase';
 
 interface ThemeInterface {
   body: string;
@@ -30,7 +30,7 @@ const AboutMe = () => {
   const [{ container, preview }, dispatch] = useStateValue();
 
   const handleThemeChange = (theme: ThemeInterface) => {
-    projectAnalytics.logEvent('theme__prefs', { theme });
+    // projectAnalytics.logEvent('theme__prefs', { theme });
     dispatch({ type: 'SET_THEME', theme });
   };
 

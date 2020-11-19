@@ -4,15 +4,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import reducer, { mainTheme } from './context/reducer';
 import { StateProvider } from './context/State.context';
-
+import { BrowserRouter } from 'react-router-dom';
 // Statics
 import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <StateProvider initialState={mainTheme} reducer={reducer}>
-      <App />
-    </StateProvider>
+    <BrowserRouter>
+      <StateProvider initialState={mainTheme} reducer={reducer}>
+        <App />
+      </StateProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
