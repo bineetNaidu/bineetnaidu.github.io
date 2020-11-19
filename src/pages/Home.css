@@ -1,0 +1,50 @@
+.home {
+  background: #3d3c3c;
+  height: 100vh;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.home__container {
+  background: #0a0909;
+  border-radius: 5px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__navigation1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-left: 12px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.home__navigation2 {
+  position: absolute;
+  margin-right: 12px;
+  top: 50%;
+  z-index: 10;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.home__brand {
+  margin-top: 4rem;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 62px;
+  line-height: 73px;
+  text-align: center;
+}
+
+.home__images {
+  max-height: 600px;
+  display: flex;
+  max-width: 800px;
+}
