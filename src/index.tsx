@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import reducer, { mainTheme } from './context/reducer';
-import { StateProvider } from './context/State.context';
 import { BrowserRouter } from 'react-router-dom';
 // Statics
 import './index.css';
@@ -11,9 +9,7 @@ import './index.css';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <StateProvider initialState={mainTheme} reducer={reducer}>
-        <App />
-      </StateProvider>
+      <App />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
