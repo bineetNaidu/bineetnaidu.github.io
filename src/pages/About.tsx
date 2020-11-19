@@ -1,60 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import {
+  containerVariant,
+  aboutMeVariant,
+  backdropVariant,
+  headerVariant,
+  tilemuskVariant,
+} from '../variants/About.variants';
 
 // Statics
 import './About.css';
-
-const containerVariant = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-  },
-};
-
-const headerVariant = {
-  initial: {
-    x: 0,
-  },
-  animate: {
-    x: 'calc(100vw - 25vw)',
-    transition: { delay: 1, duration: 1.2 },
-  },
-};
-
-const tilemuskVariant = {
-  initial: {
-    opacity: 0,
-    y: '-20vh',
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: { delay: 1.6, duration: 0.8 },
-  },
-};
-
-const backdropVariant = {
-  initial: {
-    x: 0,
-  },
-  animate: {
-    x: '-200vw',
-    transition: { delay: 0.5, duration: 0.5 },
-  },
-};
-
-const aboutMeVariant = {
-  initial: {
-    y: '55vh',
-  },
-  animate: {
-    y: 0,
-    transition: { delay: 1.6, duration: 0.8 },
-  },
-};
 
 const About: React.FC = () => {
   return (

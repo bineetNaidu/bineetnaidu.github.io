@@ -1,66 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import NavigationBar from '../components/NavigationBar';
+import {
+  containerVariants,
+  wrapperVariant,
+  brandVariant,
+  navigationVariant1,
+  navigationVariant2,
+} from '../variants/Home.variants';
 
 // Statics
 import circleSvg from '../assets/circle.svg';
 import lineSvg from '../assets/line-bars.svg';
 import './Home.css';
-
-const containerVariants = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-  },
-};
-
-const wrapperVariant = {
-  initial: {
-    y: '4vh',
-  },
-  animate: {
-    y: 0,
-    transition: { delay: 0.1 },
-  },
-};
-
-const brandVariant = {
-  initial: {
-    opacity: 0,
-    y: '-10vh',
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: { delay: 0.3 },
-  },
-};
-
-const navigationVariant1 = {
-  initial: {
-    opacity: 0,
-    x: '-10vw',
-  },
-  animate: {
-    opacity: 1,
-    x: 0,
-    transition: { delay: 0.3 },
-  },
-};
-
-const navigationVariant2 = {
-  initial: {
-    opacity: 0,
-    x: '10vw',
-  },
-  animate: {
-    opacity: 1,
-    x: 0,
-    transition: { delay: 0.3 },
-  },
-};
 
 const Home: React.FC = () => {
   return (
