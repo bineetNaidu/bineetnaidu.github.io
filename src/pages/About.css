@@ -1,0 +1,63 @@
+.about {
+  background: #0a0909;
+  color: #f1e8e8;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.about__content {
+  width: 528px;
+  float: left;
+  margin-left: 18.75%;
+  margin-bottom: 140px;
+}
+
+.about__tileMusk {
+  font-family: 'neuemachina-light';
+  font-size: 54px;
+  line-height: 80px;
+  color: #ffffff;
+  display: block;
+  clear: both;
+  border-bottom: 1px solid #fff;
+  width: fit-content;
+}
+
+.about__me {
+  position: relative;
+  margin-top: 219px;
+  width: 37.56%;
+  max-width: 397px;
+  float: left;
+  margin-left: 42px;
+}
+
+.about__header {
+  padding: 2rem 3rem;
+}
+
+.about__header > a,
+.about__header--workLink,
+.about__header--brand {
+  text-decoration: none;
+  color: white !important;
+  position: relative;
+}
+
+.about__header--workLink {
+  padding-left: 4rem;
+}
+
+.about__header--workLink::after {
+  content: '';
+  width: 46px;
+  height: 1px;
+  border: none;
+  border-top: 1px solid #fff;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateY(-50%);
+  display: block;
+  box-sizing: content-box;
+}
