@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="401" height="401" viewBox="0 0 401 401">
+    <g fill="#FFF" fill-rule="evenodd">
+        <path d="M0 0h1v1H0zM40 0h1v1h-1zM80 0h1v1h-1zM120 0h1v1h-1zM160 0h1v1h-1zM200 0h1v1h-1zM240 0h1v1h-1zM280 0h1v1h-1zM320 0h1v1h-1zM360 0h1v1h-1zM400 0h1v1h-1z"/>
+        <g>
+            <path d="M0 40h1v1H0zM40 40h1v1h-1zM80 40h1v1h-1zM120 40h1v1h-1zM160 40h1v1h-1zM200 40h1v1h-1zM240 40h1v1h-1zM280 40h1v1h-1zM320 40h1v1h-1zM360 40h1v1h-1zM400 40h1v1h-1z"/>
+        </g>
+        <g>
+            <path d="M0 80h1v1H0zM40 80h1v1h-1zM80 80h1v1h-1zM120 80h1v1h-1zM160 80h1v1h-1zM200 80h1v1h-1zM240 80h1v1h-1zM280 80h1v1h-1zM320 80h1v1h-1zM360 80h1v1h-1zM400 80h1v1h-1z"/>
+        </g>
+        <g>
+            <path d="M0 120h1v1H0zM40 120h1v1h-1zM80 120h1v1h-1zM120 120h1v1h-1zM160 120h1v1h-1zM200 120h1v1h-1zM240 120h1v1h-1zM280 120h1v1h-1zM320 120h1v1h-1zM360 120h1v1h-1zM400 120h1v1h-1z"/>
+        </g>
+        <g>
+            <path d="M0 160h1v1H0zM40 160h1v1h-1zM80 160h1v1h-1zM120 160h1v1h-1zM160 160h1v1h-1zM200 160h1v1h-1zM240 160h1v1h-1zM280 160h1v1h-1zM320 160h1v1h-1zM360 160h1v1h-1zM400 160h1v1h-1z"/>
+        </g>
+        <g>
+            <path d="M0 200h1v1H0zM40 200h1v1h-1zM80 200h1v1h-1zM120 200h1v1h-1zM160 200h1v1h-1zM200 200h1v1h-1zM240 200h1v1h-1zM280 200h1v1h-1zM320 200h1v1h-1zM360 200h1v1h-1zM400 200h1v1h-1z"/>
+        </g>
+        <g>
+            <path d="M0 240h1v1H0zM40 240h1v1h-1zM80 240h1v1h-1zM120 240h1v1h-1zM160 240h1v1h-1zM200 240h1v1h-1zM240 240h1v1h-1zM280 240h1v1h-1zM320 240h1v1h-1zM360 240h1v1h-1zM400 240h1v1h-1z"/>
+        </g>
+        <g>
+            <path d="M0 280h1v1H0zM40 280h1v1h-1zM80 280h1v1h-1zM120 280h1v1h-1zM160 280h1v1h-1zM200 280h1v1h-1zM240 280h1v1h-1zM280 280h1v1h-1zM320 280h1v1h-1zM360 280h1v1h-1zM400 280h1v1h-1z"/>
+        </g>
+        <g>
+            <path d="M0 320h1v1H0zM40 320h1v1h-1zM80 320h1v1h-1zM120 320h1v1h-1zM160 320h1v1h-1zM200 320h1v1h-1zM240 320h1v1h-1zM280 320h1v1h-1zM320 320h1v1h-1zM360 320h1v1h-1zM400 320h1v1h-1z"/>
+        </g>
+        <g>
+            <path d="M0 360h1v1H0zM40 360h1v1h-1zM80 360h1v1h-1zM120 360h1v1h-1zM160 360h1v1h-1zM200 360h1v1h-1zM240 360h1v1h-1zM280 360h1v1h-1zM320 360h1v1h-1zM360 360h1v1h-1zM400 360h1v1h-1z"/>
+        </g>
+        <g>
+            <path d="M0 400h1v1H0zM40 400h1v1h-1zM80 400h1v1h-1zM120 400h1v1h-1zM160 400h1v1h-1zM200 400h1v1h-1zM240 400h1v1h-1zM280 400h1v1h-1zM320 400h1v1h-1zM360 400h1v1h-1zM400 400h1v1h-1z"/>
+        </g>
+    </g>
+</svg>
