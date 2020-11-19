@@ -3,6 +3,18 @@
   color: #f1e8e8;
   min-height: 100vh;
   padding: 2rem 0;
+  position: relative;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
 }
 
 .about__content {
