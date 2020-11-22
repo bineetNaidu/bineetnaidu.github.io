@@ -1,0 +1,6 @@
+.works {
+  height: 100%;
+  min-height: 100vh;
+  background: #0a0909;
+  overflow-x: hidden;
+}
