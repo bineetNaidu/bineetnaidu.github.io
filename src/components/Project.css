@@ -65,7 +65,43 @@
   width: max-content;
   text-transform: uppercase;
 }
-/* .project__link */
+.project__link {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  width: 150px;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #12e09b;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.project__link > a {
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  animation-name: spin;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 .projectTile__idx {
   flex: 0.2;
   display: flex;
@@ -83,4 +119,13 @@
 
 .projectTile__idx > h1 {
   transform: rotate(90deg);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

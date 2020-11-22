@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from '../components/Project';
 import useFirestore from '../hooks/useFirestore';
+import { motion } from 'framer-motion';
 // Statics
 import './Works.css';
 interface ProjectInterfaces {
@@ -14,7 +15,7 @@ interface ProjectInterfaces {
 const Works: React.FC = () => {
   const { docs } = useFirestore('projects');
   return (
-    <div className="works">
+    <motion.div layout className="works">
       {docs.length > 0 &&
         docs.map((p: ProjectInterfaces) => (
           <Project
@@ -25,7 +26,7 @@ const Works: React.FC = () => {
             image={p.url}
           />
         ))}
-    </div>
+    </motion.div>
   );
 };
 
