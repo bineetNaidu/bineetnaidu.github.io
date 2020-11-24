@@ -1,0 +1,32 @@
+.header {
+  padding: 2rem 3rem;
+  width: 100%;
+  position: fixed;
+  z-index: 100000;
+}
+
+.header > a,
+.header--workLink,
+.header--brand {
+  text-decoration: none;
+  color: white !important;
+  position: relative;
+}
+
+.header--workLink {
+  padding-left: 4rem;
+}
+
+.header--workLink::after {
+  content: '';
+  width: 46px;
+  height: 1px;
+  border: none;
+  border-top: 1px solid #fff;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateY(-50%);
+  display: block;
+  box-sizing: content-box;
+}
