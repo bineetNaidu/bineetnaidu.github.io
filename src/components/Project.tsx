@@ -1,25 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-// Statics
-import './Project.css';
 import {
   containerVariant,
-  backdropVariant,
   projectIdxVariant,
 } from '../variants/Works.variants';
+import { ProjectTypes } from '../types';
+// Statics
+import './Project.css';
 
-interface Props {
-  idx: number;
-  link: string;
-  name: string;
-  image: string;
-  description: string;
-}
-
-const ProjectTile: React.FC<Props> = ({
+const ProjectTile: React.FC<ProjectTypes> = ({
   description,
   idx,
-  image,
+  url,
   link,
   name,
 }) => {
@@ -35,7 +27,7 @@ const ProjectTile: React.FC<Props> = ({
         <div className="project__name--backdrop">
           <h1 className="project__name">{name}</h1>
         </div>
-        <img src={image} alt={name} />
+        <img src={url} alt={name} />
       </div>
       <div className="project__metaData">
         <p className="project__details">{description}</p>
