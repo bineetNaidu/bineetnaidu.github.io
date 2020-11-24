@@ -37,7 +37,7 @@ const ProjectTile: React.FC<Props> = ({
         </div>
         <img src={image} alt={name} />
       </div>
-      <div className="projectTile__metaData">
+      <div className="project__metaData">
         <p className="project__details">{description}</p>
         <motion.div
           drag
@@ -52,7 +52,7 @@ const ProjectTile: React.FC<Props> = ({
           <a href={link}>VIEW PROJECT</a>
         </motion.div>
       </div>
-      <motion.div variants={projectIdxVariant} className="projectTile__idx">
+      <motion.div variants={projectIdxVariant} className="project__idx">
         <h1>0{idx}</h1>
       </motion.div>
     </motion.div>
