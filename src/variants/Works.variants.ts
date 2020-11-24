@@ -7,16 +7,6 @@ export const containerVariant = {
   },
 };
 
-export const headerVariant = {
-  initial: {
-    x: 0,
-  },
-  animate: {
-    x: 'calc(100vw - 25vw)',
-    transition: { delay: 1, duration: 1.2 },
-  },
-};
-
 export const backdropVariant = {
   initial: {
     x: 0,

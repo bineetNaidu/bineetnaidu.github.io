@@ -1,16 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   containerVariant,
   aboutMeVariant,
   backdropVariant,
-  headerVariant,
   tilemuskVariant,
 } from '../variants/About.variants';
 
 // Statics
 import './About.css';
+import Header from '../components/Header';
 
 const About: React.FC = () => {
   return (
@@ -21,15 +20,7 @@ const About: React.FC = () => {
       animate="animate"
     >
       <motion.div className="backdrop" variants={backdropVariant}></motion.div>
-      <motion.div variants={headerVariant} className="about__header">
-        <Link to="/" className="about__header--brand">
-          Bineet Naidu
-        </Link>
-        <Link to="/works" className="about__header--workLink">
-          Works
-        </Link>
-      </motion.div>
-
+      <Header pageLinks="/works" page="Works" />
       <div className="about__content">
         <motion.span variants={tilemuskVariant} className="about__tileMusk">
           Forget safety,
