@@ -12,7 +12,7 @@ const Works: React.FC = () => {
   return (
     <div className="works">
       <Header pageLinks="/about" page="About" />
-      <motion.div layout>
+      <motion.div layout className="works__lists">
         {docs.length > 0 &&
           docs.map((p: ProjectTypes) => (
             <Project

@@ -3,6 +3,8 @@
   width: 100%;
   position: fixed;
   z-index: 100000;
+  animation: switchLeft 0.5s forwards 0.3ms
+    cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .header > a,
@@ -29,4 +31,13 @@
   transform: translateY(-50%);
   display: block;
   box-sizing: content-box;
+}
+
+@keyframes switchLeft {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(70vw);
+  }
 }
