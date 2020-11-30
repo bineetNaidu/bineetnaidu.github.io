@@ -12,7 +12,6 @@ import {
   navigationVariant1,
   navigationVariant2,
 } from '../variants/Home.variants';
-import { Link } from 'react-router-dom';
 
 // Statics
 import circleSvg from '../assets/circle.svg';
