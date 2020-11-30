@@ -7,3 +7,9 @@ export interface ProjectTypes {
   description: string;
   idx: number | string;
 }
+
+export type Techs = {
+  id: string;
+  name: string;
+  image: string;
+};
