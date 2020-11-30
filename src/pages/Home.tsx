@@ -12,6 +12,7 @@ import {
   navigationVariant1,
   navigationVariant2,
 } from '../variants/Home.variants';
+import { Link } from 'react-router-dom';
 
 // Statics
 import circleSvg from '../assets/circle.svg';
@@ -43,15 +44,21 @@ const Home: React.FC = () => {
         </div>
         <div className="home__ctx">
           <div className="home__socials">
-            <IconButton color="secondary">
-              <GitHubIcon />
-            </IconButton>
-            <IconButton>
-              <InstagramIcon color="secondary" />
-            </IconButton>
-            <IconButton>
-              <TwitterIcon color="secondary" />
-            </IconButton>
+            <a href="https://www.github.com/bineetNaidu">
+              <IconButton color="secondary">
+                <GitHubIcon />
+              </IconButton>
+            </a>
+            <a href="https://www.instagram.com/bineet_naidu">
+              <IconButton>
+                <InstagramIcon color="secondary" />
+              </IconButton>
+            </a>
+            <a href="https://www.twitter.com/bineetNaidu">
+              <IconButton>
+                <TwitterIcon color="secondary" />
+              </IconButton>
+            </a>
           </div>
           <h5>EN</h5>
         </div>

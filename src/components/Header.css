@@ -3,7 +3,7 @@
   width: 100%;
   position: fixed;
   z-index: 100000;
-  animation: switchLeft 0.5s forwards 0.3ms
+  animation: switchLeft 0.5s forwards 0.8s
     cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
