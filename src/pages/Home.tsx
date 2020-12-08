@@ -17,6 +17,7 @@ import {
 import circleSvg from '../assets/circle.svg';
 import lineSvg from '../assets/line-bars.svg';
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   return (
@@ -59,7 +60,9 @@ const Home: React.FC = () => {
               </IconButton>
             </a>
           </div>
-          <h5>EN</h5>
+          <Link to="/en">
+            <h5>EN</h5>
+          </Link>
         </div>
       </motion.div>
     </motion.div>

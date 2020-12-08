@@ -49,6 +49,8 @@
 .about__techs {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 5rem;
 }
 
 .about__techImg {

@@ -59,11 +59,12 @@
   align-items: center;
   width: 95%;
 }
-.home__ctx > h5 {
+.home__ctx > h5,
+.home__ctx a h5 {
   font-weight: 300;
   cursor: pointer;
 }
 
-.home__ctx > h5:hover {
+.home__ctx > a h5:hover {
   color: rgb(245, 0, 87);
 }
