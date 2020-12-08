@@ -12,14 +12,21 @@ import {
   navigationVariant1,
   navigationVariant2,
 } from '../variants/Home.variants';
+import { Link } from 'react-router-dom';
 
 // Statics
 import circleSvg from '../assets/circle.svg';
 import lineSvg from '../assets/line-bars.svg';
 import './Home.css';
-import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
+  // const [spotlightMsg, setSpotlightMsg] = React.useState('Unique');
+  // const msgs = ['Unique', 'Loud', 'Fearless', 'Awesome', 'Bold', 'Intense']
+  // React.useEffect(() => {
+
+  //   setTimeout(() => setSpotlightMsg())
+
+  // }, [setSpotlightMsg])
   return (
     <motion.div
       className="home"
@@ -41,6 +48,11 @@ const Home: React.FC = () => {
         <div className="home__images">
           <img src={circleSvg} alt="circle svg" width="100%" height="100%" />
           <img src={lineSvg} alt="line bar svg" width="100%" height="100%" />
+          <div className="home__spotlight">
+            <p>Dare to be</p>
+            {/* <h1>{spotlightMsg}</h1> */}
+            <h1>Unique</h1>
+          </div>
         </div>
         <div className="home__ctx">
           <div className="home__socials">

@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-around;
   overflow: hidden;
 }
 
@@ -36,7 +37,6 @@
 
 .home__brand {
   margin-top: 4rem;
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
   font-size: 62px;
@@ -51,6 +51,7 @@
   align-items: center;
   justify-content: center;
   margin: auto;
+  position: relative;
 }
 
 .home__ctx {
@@ -58,6 +59,7 @@
   justify-content: space-between;
   align-items: center;
   width: 95%;
+  margin-bottom: 10px;
 }
 .home__ctx > h5,
 .home__ctx a h5 {
@@ -67,4 +69,47 @@
 
 .home__ctx > a h5:hover {
   color: rgb(245, 0, 87);
+}
+
+.home__spotlight {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__spotlight > p {
+  text-align: center;
+  font-size: 16px;
+  margin-top: -93px;
+  color: #6f7377;
+  position: relative;
+  letter-spacing: normal;
+  line-height: 32px;
+}
+
+.home__spotlight > h1 {
+  display: block;
+  color: #fff;
+  font-size: 4rem;
+  line-height: 1;
+  font-family: neuemachina-ultrabold;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  margin-top: 2rem;
+}
+
+@media (max-width: 700px) {
+  .home__brand {
+    font-size: 6vw;
+  }
+  .home__navigation1 {
+    transform: rotate(90deg) !important;
+    left: -16%;
+  }
+  .home__navigation2 {
+    transform: rotate(90deg) !important;
+    right: -16%;
+  }
 }
