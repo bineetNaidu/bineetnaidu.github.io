@@ -4,6 +4,7 @@
   padding: 5rem 0;
   position: relative;
   overflow: hidden;
+  margin: 1rem 0;
 }
 
 .project__media {
@@ -41,7 +42,7 @@
 
 .project__name {
   font-size: 8vw;
-  line-height: 1em;
+  line-height: 1.2em;
   font-weight: 900;
   -webkit-text-stroke: 2px #fff;
   text-transform: uppercase;

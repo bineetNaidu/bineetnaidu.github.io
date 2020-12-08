@@ -6,6 +6,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  font-family: neuemachina-ultrabold;
 }
 
 .backdrop {
@@ -27,7 +28,7 @@
 }
 
 .about__tileMusk {
-  font-family: 'neuemachina-light';
+  font-family: neuemachina-ultrabold;
   font-size: 54px;
   line-height: 80px;
   color: #ffffff;
