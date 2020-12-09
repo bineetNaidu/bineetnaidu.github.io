@@ -14,10 +14,10 @@ const Works: React.FC = () => {
       <Header pageLinks="/about" page="About" />
       <motion.div layout className="works__lists">
         {docs.length > 0 &&
-          docs.map((p: ProjectTypes) => (
+          docs.map((p: ProjectTypes, idx) => (
             <Project
               description="Deign + UI + ux"
-              idx={1}
+              idx={idx + 1}
               name={p.name}
               link={p.link}
               url={p.url}
