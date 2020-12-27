@@ -41,3 +41,14 @@
     transform: translateX(70vw);
   }
 }
+
+@media (max-width: 500px) {
+  .header {
+    margin: auto;
+    padding: 1rem 10%;
+    animation: none;
+  }
+  .header:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
