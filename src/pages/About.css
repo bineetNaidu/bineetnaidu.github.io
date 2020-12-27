@@ -7,6 +7,8 @@
   display: flex;
   flex-direction: column;
   font-family: neuemachina-ultrabold;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .backdrop {
@@ -63,6 +65,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20px;
+  flex: 1;
 }
 
 .about__techItem > h4 {
@@ -98,5 +102,36 @@
   .about__techImg {
     margin: 0.5rem;
     flex: 0.1;
+  }
+}
+
+@media (max-width: 700px) {
+  .about__techItem {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .about__content {
+    width: 100%;
+    margin-left: 12px;
+    margin-bottom: -10px;
+    margin-top: 50px;
+  }
+  .about__me {
+    margin: 55px 50px;
+  }
+}
+
+@media (max-width: 350px) {
+  .about__techItem {
+    margin: auto;
+  }
+  .about__techs {
+    padding: 0 2px;
+  }
+
+  .about__tileMusk {
+    font-size: 2rem;
   }
 }
