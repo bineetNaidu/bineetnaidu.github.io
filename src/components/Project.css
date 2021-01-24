@@ -52,7 +52,7 @@
 .project__metaData {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex: 0.1;
 }
@@ -61,7 +61,7 @@
   transform: rotate(90deg);
   opacity: 0.6;
   color: #fff;
-  font-size: 16px;
+  font-size: 10px;
   line-height: 1em;
   font-weight: 300;
   letter-spacing: 1px;

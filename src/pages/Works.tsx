@@ -16,7 +16,7 @@ const Works: React.FC = () => {
         {docs.length > 0 &&
           docs.map((p: ProjectTypes, idx) => (
             <Project
-              description="Deign + UI + ux"
+              description={p.description}
               idx={idx + 1}
               name={p.name}
               link={p.link}
