@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/bineetnaidu.github.io/static/css/main.dcd1265e.chunk.css",
+    "main.js": "/bineetnaidu.github.io/static/js/main.852593fa.chunk.js",
+    "main.js.map": "/bineetnaidu.github.io/static/js/main.852593fa.chunk.js.map",
+    "runtime-main.js": "/bineetnaidu.github.io/static/js/runtime-main.3805854f.js",
+    "runtime-main.js.map": "/bineetnaidu.github.io/static/js/runtime-main.3805854f.js.map",
+    "static/js/2.86f6144f.chunk.js": "/bineetnaidu.github.io/static/js/2.86f6144f.chunk.js",
+    "static/js/2.86f6144f.chunk.js.map": "/bineetnaidu.github.io/static/js/2.86f6144f.chunk.js.map",
+    "index.html": "/bineetnaidu.github.io/index.html",
+    "static/css/main.dcd1265e.chunk.css.map": "/bineetnaidu.github.io/static/css/main.dcd1265e.chunk.css.map",
+    "static/js/2.86f6144f.chunk.js.LICENSE.txt": "/bineetnaidu.github.io/static/js/2.86f6144f.chunk.js.LICENSE.txt",
+    "static/media/circle.469442a8.svg": "/bineetnaidu.github.io/static/media/circle.469442a8.svg",
+    "static/media/line-bars.d934c14e.svg": "/bineetnaidu.github.io/static/media/line-bars.d934c14e.svg",
+    "static/media/index.css": "/bineetnaidu.github.io/static/media/neuemachina-ultrabold.afcd8980.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3805854f.js",
+    "static/js/2.86f6144f.chunk.js",
+    "static/css/main.dcd1265e.chunk.css",
+    "static/js/main.852593fa.chunk.js"
+  ]
+}
