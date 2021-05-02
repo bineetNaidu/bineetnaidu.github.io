@@ -2,7 +2,7 @@
   "name": "bineetnaidu.io",
   "version": "4.0.0",
   "private": true,
-  "homepage": "bineetnaidu.github.io",
+  "homepage": "https://bineetnaidu.github.io",
   "author": "Bineet Naidu",
   "description": "This React app is for my portfolio",
   "dependencies": {
