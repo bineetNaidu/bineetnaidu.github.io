@@ -1,0 +1,40 @@
+@import 'variables';
+
+.navbar {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 11;
+  padding: 0px 50px;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(10px);
+
+  &__links {
+    display: flex;
+    font-size: medium;
+
+    ::marker {
+      color: $color-primary;
+    }
+
+    li {
+      margin: 0 18px;
+
+      &:hover {
+        a {
+          color: $color-primary;
+        }
+      }
+
+      a {
+        color: $color-secondary;
+      }
+    }
+  }
+}

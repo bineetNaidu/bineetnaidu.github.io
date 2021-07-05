@@ -1,10 +1,11 @@
 import { FC } from 'react';
+import { Navbar } from './components/Navbar';
 import './styles/App.scss';
 
 const App: FC = () => {
   return (
     <div className="app">
-      <h1>Say hi, to v5!</h1>
+      <Navbar />
     </div>
   );
 };
