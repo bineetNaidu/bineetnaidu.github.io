@@ -5,6 +5,8 @@
   src: url('../assets/neuemachina-ultrabold.woff2');
 }
 
+@import 'variables';
+
 * {
   padding: 0;
   margin: 0;
@@ -35,7 +37,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
-  background-color: #0a192f;
+  background-color: $bg;
   position: relative;
   min-height: 100vh;
   width: 100%;
