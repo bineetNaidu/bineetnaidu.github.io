@@ -1,0 +1,61 @@
+@import 'variables';
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0;
+
+  @media (max-width: 480px) and (min-height: 700px) {
+    padding-bottom: 10vh;
+  }
+
+  h1 {
+    margin: 0 0 30px 4px;
+    color: $color-primary;
+    font-size: large;
+
+    @media (max-width: 480px) {
+      margin: 0 0 20px 2px;
+    }
+  }
+
+  h2 {
+    color: $color-main;
+    font-size: 5rem;
+  }
+
+  h3 {
+    margin-top: 10px;
+    color: $color-secondary;
+    line-height: 0.9;
+    font-size: 4rem;
+  }
+
+  p {
+    margin: 20px 0 0;
+    max-width: 500px;
+    color: $color-secondary;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.7px;
+
+    & > a {
+      color: $color-primary;
+      text-decoration: underline;
+    }
+  }
+
+  & > a {
+    color: $color-primary;
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    border-radius: 7px;
+    padding: 1.25rem 1.75rem;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+}
