@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Wrapper } from './components/Wrapper';
+import { About } from './components/About';
 import './styles/App.scss';
 
 const App: FC = () => {
@@ -10,7 +11,7 @@ const App: FC = () => {
       <Navbar />
       <Wrapper>
         <Hero />
-        {/* About */}
+        <About />
         {/* Experience */}
         {/* Works */}
         {/* Contact */}
