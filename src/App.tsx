@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Wrapper } from './components/Wrapper';
 import { About } from './components/About';
+import { Works } from './components/Works';
 import './styles/App.scss';
 
 const App: FC = () => {
@@ -13,7 +14,7 @@ const App: FC = () => {
         <Hero />
         <About />
         {/* Experience */}
-        {/* Works */}
+        <Works />
         {/* Contact */}
       </Wrapper>
     </div>
