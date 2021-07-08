@@ -1,0 +1,93 @@
+@import 'variables';
+
+.project {
+  margin: 3rem 0;
+  position: relative;
+  display: flex;
+
+  &__context {
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+
+    .header {
+      .feature__line {
+        margin-bottom: 20px;
+        color: $color-primary;
+        font-size: small;
+      }
+      .project__name {
+        margin-top: 20px;
+        font-size: clamp(24px, 5vw, 28px);
+
+        @media (min-width: 768px) {
+          margin: 0px 0px 20px;
+        }
+      }
+    }
+
+    .description {
+      box-shadow: 0 10px 30px -15px $color-secondary;
+      transition: 200;
+      position: relative;
+      z-index: 8;
+      padding: 25px;
+      border-radius: 5px;
+      background-color: #112240;
+      color: $color-main;
+      font-size: larger;
+    }
+    .techs {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 2;
+      margin: 25px 0px 10px;
+      padding: 0px;
+      list-style: none;
+
+      span {
+        margin: 0px 20px 5px 0px;
+        color: $color-secondary;
+        font-size: small;
+        white-space: nowrap;
+      }
+    }
+    .links {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__image {
+    box-shadow: 0 10px 30px -15px $color-primary;
+    transition: 200;
+    position: relative;
+    z-index: 1;
+    flex: 0.7;
+
+    .img {
+      border-radius: 8px;
+      mix-blend-mode: multiply;
+      filter: grayscale(100%) contrast(1) brightness(90%);
+    }
+
+    .project:hover & {
+      .img,
+      img {
+        filter: none;
+      }
+    }
+
+    img {
+      transition: opacity 500ms linear 0s;
+      object-fit: cover;
+      filter: blur(5px);
+      width: 100%;
+      height: 100%;
+      border: 8px;
+    }
+  }
+}
