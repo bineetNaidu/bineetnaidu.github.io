@@ -9,6 +9,13 @@
   -webkit-box-align: center;
   align-items: center;
 
+  @media (max-width: 560px) {
+    &__context,
+    &__image {
+      grid-column: 1 / -1 !important;
+    }
+  }
+
   &:nth-of-type(2n + 1) &__context {
     grid-column: 7 / -1;
     text-align: right;
@@ -16,6 +23,16 @@
 
   &:nth-of-type(2n + 1) &__image {
     grid-column: 1 / 8;
+    @media (max-width: 560px) {
+      flex-direction: row;
+    }
+  }
+
+  &:nth-of-type(2n + 1) &__context > .techs {
+    flex-direction: row-reverse;
+    @media (max-width: 560px) {
+      flex-direction: row;
+    }
   }
 
   &__context {
@@ -26,6 +43,9 @@
     z-index: 10;
     position: relative;
     grid-area: 1 / 1 / -1 / 7;
+    @media (max-width: 560px) {
+      padding: 2rem;
+    }
 
     .header {
       .feature__line {
@@ -54,6 +74,10 @@
       color: $color-main;
       font-size: medium;
       font-family: 'Courier New', Courier, monospace;
+      @media (max-width: 560px) {
+        background-color: transparent;
+        box-shadow: none;
+      }
     }
     .techs {
       display: flex;
@@ -84,17 +108,23 @@
     z-index: 1;
     grid-area: 1 / 6 / -1 / -1;
     flex: 0.7;
+    height: 100%;
 
     .img {
       border-radius: 8px;
       mix-blend-mode: multiply;
       filter: grayscale(50%) contrast(1) brightness(75%);
+      height: 100%;
+      @media (max-width: 560px) {
+        filter: grayscale(100%) contrast(1) brightness(45%);
+      }
     }
 
-    .project:hover & {
-      .img,
-      img {
-        filter: none;
+    @media (min-width: 560px) {
+      .project:hover & {
+        .img img {
+          filter: none;
+        }
       }
     }
 

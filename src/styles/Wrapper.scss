@@ -4,4 +4,14 @@
   max-width: 1600px;
   min-height: 100vh;
   padding: 150px 150px;
+
+  @media (max-width: 768px) {
+    padding: 150px 80px;
+  }
+  @media (max-width: 608px) {
+    padding: 100px 40px;
+  }
+  @media (max-width: 450px) {
+    padding: 20px;
+  }
 }

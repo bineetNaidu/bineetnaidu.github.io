@@ -19,11 +19,22 @@
     @media (max-width: 480px) {
       margin: 0 0 20px 2px;
     }
+    @media (max-width: 450px) {
+      font-size: small;
+    }
   }
 
   h2 {
     color: $color-main;
     font-size: 5rem;
+
+    @media (max-width: 600px) {
+      font-size: 4rem;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 2rem;
+    }
   }
 
   h3 {
@@ -31,6 +42,12 @@
     color: $color-secondary;
     line-height: 0.9;
     font-size: 4rem;
+    @media (max-width: 600px) {
+      font-size: 3rem;
+    }
+    @media (max-width: 450px) {
+      font-size: 1.5rem;
+    }
   }
 
   p {
@@ -40,6 +57,9 @@
     font-size: large;
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 0.7px;
+    @media (max-width: 450px) {
+      font-size: medium;
+    }
 
     & > a {
       color: $color-primary;
