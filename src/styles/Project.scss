@@ -3,7 +3,20 @@
 .project {
   margin: 3rem 0;
   position: relative;
-  display: flex;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  -webkit-box-align: center;
+  align-items: center;
+
+  &:nth-of-type(2n + 1) &__context {
+    grid-column: 7 / -1;
+    text-align: right;
+  }
+
+  &:nth-of-type(2n + 1) &__image {
+    grid-column: 1 / 8;
+  }
 
   &__context {
     flex: 0.3;
@@ -11,6 +24,8 @@
     flex-direction: column;
     justify-content: center;
     z-index: 10;
+    position: relative;
+    grid-area: 1 / 1 / -1 / 7;
 
     .header {
       .feature__line {
@@ -37,7 +52,8 @@
       border-radius: 5px;
       background-color: #112240;
       color: $color-main;
-      font-size: larger;
+      font-size: medium;
+      font-family: 'Courier New', Courier, monospace;
     }
     .techs {
       display: flex;
@@ -66,12 +82,13 @@
     transition: 200;
     position: relative;
     z-index: 1;
+    grid-area: 1 / 6 / -1 / -1;
     flex: 0.7;
 
     .img {
       border-radius: 8px;
       mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1) brightness(90%);
+      filter: grayscale(50%) contrast(1) brightness(75%);
     }
 
     .project:hover & {

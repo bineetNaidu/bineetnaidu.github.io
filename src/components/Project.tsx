@@ -4,15 +4,11 @@ import '../styles/Project.scss';
 
 interface Props {
   project: IProject;
-  flip: boolean;
 }
 
-export const Project: FC<Props> = ({ project, flip }) => {
+export const Project: FC<Props> = ({ project }) => {
   return (
-    <div
-      className="project"
-      style={{ flexDirection: flip ? 'row-reverse' : 'row' }}
-    >
+    <div className="project">
       <div className="project__context">
         <div className="header">
           <span className="feature__line">Featured Project</span>

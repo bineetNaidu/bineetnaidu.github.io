@@ -9,7 +9,7 @@ export const Works: FC = () => {
     <section className="works">
       <h2 className="works__header">Some Things I’ve Built</h2>
       {docs.map((p, idx) => (
-        <Project project={p} key={p.id} flip={idx % 2 === 0} />
+        <Project project={p} key={p.id} />
       ))}
     </section>
   );
