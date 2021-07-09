@@ -1,42 +1,10 @@
 @import 'variables';
+@import 'mixins';
 
 .works {
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 100vh;
-  padding: 0;
+  @include base_section;
 
   &__header {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    position: relative;
-    margin: 10px 0px 40px;
-    width: 100%;
-    white-space: nowrap;
-    @media (max-width: 450px) {
-      font-size: 1.3rem;
-    }
-
-    &::before {
-      position: relative;
-      counter-increment: section 2;
-      content: '0' counter(section) '.';
-      margin-right: 10px;
-      color: $color-primary;
-      font-weight: 400;
-    }
-
-    &::after {
-      content: '';
-      display: block;
-      position: relative;
-      width: 300px;
-      height: 1px;
-      margin-left: 20px;
-      background-color: $color-secondary;
-    }
+    @include base_section_header;
   }
 }

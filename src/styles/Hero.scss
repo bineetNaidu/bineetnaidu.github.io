@@ -1,11 +1,8 @@
 @import 'variables';
+@import 'mixins';
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 100vh;
-  padding: 0;
+  @include base_section;
 
   @media (max-width: 480px) and (min-height: 700px) {
     padding-bottom: 10vh;
