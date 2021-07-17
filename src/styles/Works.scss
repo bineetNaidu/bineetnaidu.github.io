@@ -6,5 +6,9 @@
 
   &__header {
     @include base_section_header;
+
+    @media (max-width: 350px) {
+      font-size: larger;
+    }
   }
 }

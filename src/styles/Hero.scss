@@ -29,6 +29,10 @@
       font-size: 4rem;
     }
 
+    @media (max-width: 480px) {
+      font-size: 3rem;
+    }
+
     @media (max-width: 450px) {
       font-size: 2rem;
     }

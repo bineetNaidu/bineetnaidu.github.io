@@ -63,6 +63,10 @@ body {
   width: 100%;
   scroll-behavior: smooth;
   overflow-x: hidden;
+
+  @media (max-width: 450px) {
+    overflow-x: hidden;
+  }
 }
 
 a {
