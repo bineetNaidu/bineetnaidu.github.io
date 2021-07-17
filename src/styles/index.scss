@@ -5,6 +5,26 @@
   src: url('../assets/neuemachina-ultrabold.woff2');
 }
 
+@font-face {
+  font-family: DMMono-Medium;
+  src: url('../assets/DMMono-Medium.ttf');
+}
+
+@font-face {
+  font-family: DMMono-Italic;
+  src: url('../assets/DMMono-Italic.ttf');
+}
+
+@font-face {
+  font-family: DMMono-Light;
+  src: url('../assets/DMMono-Light.ttf');
+}
+
+@font-face {
+  font-family: DMMono-Regular;
+  src: url('../assets/DMMono-Regular.ttf');
+}
+
 @import 'variables';
 
 * {
