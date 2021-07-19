@@ -5,4 +5,5 @@ export interface IProject {
   link: string;
   github: string;
   description: string;
+  techStacks: string;
 }

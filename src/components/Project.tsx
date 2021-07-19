@@ -18,16 +18,16 @@ export const Project: FC<Props> = ({ project }) => {
           <p>{project.description}</p>
         </div>
         <div className="techs">
-          <span>Next.js</span>
-          <span>Express</span>
-          <span>MongoDB</span>
+          {project.techStacks?.split(',').map((w) => (
+            <span key={w}>{w}</span>
+          ))}
         </div>
         <div className="links">
           <a href={project.github} target="_blank" rel="noreferrer">
-            GitHub
+            <i className="fab fa-github"></i>
           </a>
           <a href={project.link} target="_blank" rel="noreferrer">
-            Web
+            <i className="fas fa-external-link-alt"></i>
           </a>
         </div>
       </div>
