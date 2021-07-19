@@ -2,3 +2,12 @@
   transition: background-color 1.5s cubic-bezier(0.65, 0.05, 0.36, 1);
   min-height: 100vh;
 }
+
+.footer {
+  display: flex;
+  height: 100%;
+  margin-top: 3rem;
+  justify-content: center;
+  font-family: DMMono-Italic;
+  font-size: smaller;
+}

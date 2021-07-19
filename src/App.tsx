@@ -13,9 +13,12 @@ const App: FC = () => {
       <Wrapper>
         <Hero />
         <About />
-        {/* Experience */}
         <Works />
-        {/* Contact */}
+        <div className="footer">
+          <a href="https://github.com/bineetNaidu/bineetnaidu.io">
+            Design and Build by Bineet Naidu
+          </a>
+        </div>
       </Wrapper>
     </div>
   );
