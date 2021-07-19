@@ -3,7 +3,7 @@ import '../styles/About.scss';
 
 export const About: FC = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <h2 className="about__header">About</h2>
       <div className="about__metadata">
         <div className="meta__info">

@@ -29,7 +29,7 @@ export const Navbar: FC = () => {
             when: 'beforeChildren',
           }}
         >
-          <a href="/#">About</a>
+          <a href="/#about">About</a>
         </motion.li>
         <motion.li
           initial={{ opacity: 0, y: '100vh' }}
@@ -51,7 +51,7 @@ export const Navbar: FC = () => {
             when: 'beforeChildren',
           }}
         >
-          <a href="/#">Work</a>
+          <a href="/#work">Work</a>
         </motion.li>
         <motion.li
           initial={{ opacity: 0, y: '100vh' }}
