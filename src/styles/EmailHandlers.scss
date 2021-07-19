@@ -4,7 +4,7 @@
   width: 40px;
   position: fixed;
   bottom: 0px;
-  left: auto;
+  font-family: DMMono-Regular;
   right: 40px;
   z-index: 10;
   color: $color-main;
@@ -27,13 +27,15 @@
       -webkit-writing-mode: vertical-rl;
       writing-mode: vertical-rl;
       position: relative;
+      display: flex;
+      align-items: center;
 
       &::after {
         content: '';
         display: block;
         width: 1px;
         height: 90px;
-        margin: 0px auto;
+        margin: 2px auto;
         background-color: $color-main;
       }
     }
