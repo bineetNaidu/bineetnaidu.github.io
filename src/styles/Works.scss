@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'mixins';
+
+.works {
+  @include base_section;
+
+  &__header {
+    @include base_section_header;
+
+    @media (max-width: 350px) {
+      font-size: larger;
+    }
+  }
+}

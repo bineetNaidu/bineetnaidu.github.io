@@ -1,54 +1,76 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import {
-  containerVariant,
-  projectIdxVariant,
-} from '../variants/Works.variants';
-import { ProjectTypes } from '../types';
-// Statics
-import './Project.css';
+import { FC, useEffect } from 'react';
+import { IProject } from '../@types/types';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import '../styles/Project.scss';
 
-const ProjectTile: React.FC<ProjectTypes> = ({
-  description,
-  idx,
-  url,
-  link,
-  name,
-}) => {
+interface Props {
+  project: IProject;
+  flip?: boolean;
+}
+
+export const Project: FC<Props> = ({ project, flip }) => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+    if (!inView) {
+      controls.start('hidden');
+    }
+  }, [controls, inView]);
+
+  const variant = {
+    hidden: {
+      x: flip ? '200vw' : '-100vw',
+    },
+    visible: {
+      x: '0vw',
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
-    <motion.div
-      variants={containerVariant}
-      initial="initial"
-      animate="animate"
-      className="project"
-    >
-      {/* <motion.div variants={backdropVariant} className=""></motion.div> */}
-      <div className="project__media">
-        <div className="project__name--backdrop">
-          <h1 className="project__name">{name}</h1>
+    <>
+      <div ref={ref}></div>
+      <motion.div
+        initial="hidden"
+        variants={variant}
+        animate={controls}
+        className="project"
+      >
+        <div className="project__context">
+          <div className="header">
+            <span className="feature__line">Featured Project</span>
+            <h1 className="project__name">{project.name}</h1>
+          </div>
+          <div className="description">
+            <p>{project.description}</p>
+          </div>
+          <div className="techs">
+            {project.techStacks?.split(',').map((w) => (
+              <span key={w}>{w}</span>
+            ))}
+          </div>
+          <div className="links">
+            <a href={project.github} target="_blank" rel="noreferrer">
+              <i className="fab fa-github"></i>
+            </a>
+            <a href={project.link} target="_blank" rel="noreferrer">
+              <i className="fas fa-external-link-alt"></i>
+            </a>
+          </div>
         </div>
-        <img src={url} alt={name} />
-      </div>
-      <div className="project__metaData">
-        <p className="project__details">{description}</p>
-        <motion.div
-          drag
-          dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-          dragElastic={0.7}
-          className="project__link"
-          initial={{ scale: 1 }}
-          whileHover={{
-            scale: 1.2,
-          }}
-        >
-          <a href={link}>VIEW PROJECT</a>
-        </motion.div>
-      </div>
-      <motion.div variants={projectIdxVariant} className="project__idx">
-        <h1>0{idx}</h1>
+        <div className="project__image">
+          <div className="img">
+            <img src={project.url} alt={project.name + ' image'} />
+          </div>
+        </div>
       </motion.div>
-    </motion.div>
+    </>
   );
 };
-
-export default ProjectTile;

@@ -1,0 +1,151 @@
+@import 'variables';
+
+.project {
+  margin: 3rem 0;
+  position: relative;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  -webkit-box-align: center;
+  align-items: center;
+
+  @media (max-width: 560px) {
+    &__context,
+    &__image {
+      grid-column: 1 / -1 !important;
+    }
+  }
+
+  &:nth-of-type(2n + 1) &__context {
+    grid-column: 7 / -1;
+    text-align: right;
+  }
+
+  &:nth-of-type(2n + 1) &__image {
+    grid-column: 1 / 8;
+    @media (max-width: 560px) {
+      flex-direction: row;
+    }
+  }
+
+  &:nth-of-type(2n + 1) &__context > .techs {
+    flex-direction: row-reverse;
+    @media (max-width: 560px) {
+      flex-direction: row;
+    }
+  }
+
+  &__context {
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+    position: relative;
+    grid-area: 1 / 1 / -1 / 7;
+    @media (max-width: 560px) {
+      padding: 2rem;
+    }
+
+    .header {
+      .feature__line {
+        margin-bottom: 20px;
+        color: $color-primary;
+        font-size: small;
+      }
+      .project__name {
+        margin-top: 20px;
+        font-size: clamp(24px, 5vw, 28px);
+
+        @media (min-width: 768px) {
+          margin: 0px 0px 20px;
+        }
+      }
+    }
+
+    .description {
+      box-shadow: 0 10px 30px -15px $color-secondary;
+      transition: 200;
+      position: relative;
+      z-index: 8;
+      padding: 25px;
+      border-radius: 5px;
+      background-color: #112240;
+      color: $color-main;
+      font-size: medium;
+      font-family: DMMono-Medium;
+      @media (max-width: 560px) {
+        background-color: transparent;
+        box-shadow: none;
+      }
+    }
+    .techs {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 2;
+      margin: 25px 0px 10px;
+      padding: 0px;
+      list-style: none;
+
+      span {
+        margin: 0px 20px 5px 0px;
+        color: $color-secondary;
+        font-size: small;
+        white-space: nowrap;
+      }
+    }
+    .links {
+      display: flex;
+      flex-direction: row-reverse;
+
+      a {
+        font-size: larger;
+        margin: 0 10px;
+        padding: 5px;
+        border-radius: 9px;
+
+        &:hover {
+          background-color: rgba($color: #112240, $alpha: 0.5);
+        }
+      }
+    }
+  }
+
+  &__image {
+    box-shadow: 0 10px 30px -15px $color-primary;
+    transition: 200;
+    position: relative;
+    z-index: 1;
+    grid-area: 1 / 6 / -1 / -1;
+    flex: 0.7;
+    height: 100%;
+
+    .img {
+      border-radius: 8px;
+      mix-blend-mode: multiply;
+      filter: grayscale(50%) contrast(1) brightness(75%);
+      height: 100%;
+      @media (max-width: 560px) {
+        filter: grayscale(60%) contrast(1) brightness(45%);
+      }
+    }
+
+    @media (min-width: 560px) {
+      .project:hover & {
+        .img img {
+          filter: none;
+        }
+      }
+    }
+
+    img {
+      transition: opacity 500ms linear 0s;
+      object-fit: cover;
+      filter: blur(5px);
+      width: 100%;
+      height: 100%;
+      border: 8px;
+    }
+  }
+}

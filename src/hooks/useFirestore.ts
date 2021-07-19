@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
-import { projectFirestore } from '../firebase';
+import { IProject } from 'src/@types/types';
+import { projectFirestore } from '../lib/firebase';
 
 // takes a collection name
 const useFirestore = (collection: string) => {
   // STATES
-  const [docs, setDocs] = useState([]);
+  const [docs, setDocs] = useState<IProject[]>([]);
 
   // HOOKS
   useEffect(() => {

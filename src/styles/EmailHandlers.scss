@@ -1,0 +1,43 @@
+@import 'variables';
+
+.emailHandlers {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  font-family: DMMono-Regular;
+  right: 40px;
+  z-index: 10;
+  color: $color-main;
+
+  @media (max-width: 883px) {
+    display: none;
+  }
+
+  .email {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+
+    & > a {
+      margin: 20px auto;
+      padding: 10px;
+      letter-spacing: 0.1em;
+      -webkit-writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 2px auto;
+        background-color: $color-main;
+      }
+    }
+  }
+}
