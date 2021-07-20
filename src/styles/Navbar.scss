@@ -32,7 +32,10 @@
     }
 
     @media (max-width: 450px) {
-      display: none;
+      padding: 0px;
+      font-size: smaller;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     ::marker {
@@ -41,7 +44,9 @@
 
     li {
       margin: 0 18px;
-
+      @media (max-width: 450px) {
+        margin: 0 11px;
+      }
       &:hover {
         a {
           color: $color-primary;
