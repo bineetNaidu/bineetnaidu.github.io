@@ -3,6 +3,7 @@
 
 .works {
   @include base_section;
+  overflow-x: hidden;
 
   &__header {
     @include base_section_header;
