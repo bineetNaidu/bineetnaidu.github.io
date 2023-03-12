@@ -4,7 +4,81 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-  <section class="">
-    <div></div>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+  <style>
+    .glass {
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(158, 122, 218, 0.75);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+    }
+
+    .neumorphic {
+      border-radius: 50px;
+      background: linear-gradient(225deg, #cacaca, #f0f0f0);
+      box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
+    }
+  </style>
+  <section
+    class="flex flex-col sm:flex-row space-y-5 sm:mx-[8%] md:mx-[20%] sm:gap-5"
+  >
+    <article class="py-5 rounded relative">
+      <img
+        class="min-h-[400px] h-[200px] sm:h-min min-w-full rounded-3xl object-cover shadow-2xl"
+        src="https://images.unsplash.com/photo-1674965109429-36ffa755fdd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&q=60"
+        alt="avatar"
+      />
+    </article>
+
+    <article class="rounded-3xl p-8 flex flex-col glass">
+      <h1 class="text-xl font-semibold tracking-wide">
+        Hello, I&apos;m Bineet, a fullstack Javascript developer and GraphQl
+        enthusiast, With 3+ years of experience.
+      </h1>
+
+      <p class="py-5 italic text-md">I mostly build things for the web.</p>
+
+      <a
+        href="mailto:bineetnaiduapps@gmail.com"
+        class="bg-gray-800 text-white py-3 rounded-2xl text-center cursor-pointer hover:bg-gray-900 active:scale-95 transition-all"
+      >
+        Contact me</a
+      >
+
+      <div class="flex justify-evenly pt-5">
+        <a
+          href="https://www.linkedin.com/in/bineet-naidu-9b1b3b1b3/"
+          class="bg-blue-500 text-white py-3 px-4 rounded-full text-center cursor-pointer hover:bg-blue-600 active:scale-95 transition-all"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+
+        <a
+          href="https://twitter.com/bineet_naidu"
+          class="bg-blue-400 text-white py-3 px-4 rounded-full text-center cursor-pointer hover:bg-blue-500 active:scale-95 transition-all"
+        >
+          <i class="fa fa-twitter"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/bineet_naidu"
+          class="bg-pink-500 text-white py-3 px-4 rounded-full text-center cursor-pointer hover:bg-pink-600 active:scale-95 transition-all"
+        >
+          <i class="fa fa-instagram"></i>
+        </a>
+
+        <a
+          href="https://bineetnaidu.hashnode.dev/"
+          class="bg-gray-800 text-white py-3 px-4 rounded-full text-center cursor-pointer hover:bg-gray-900 active:scale-95 transition-all"
+        >
+          <i class="fa fa-google"></i>
+        </a>
+      </div>
+    </article>
   </section>
 </Layout>
