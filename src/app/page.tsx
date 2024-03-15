@@ -1,11 +1,12 @@
 import { HeroSection } from './components/homepage/HeroSection';
+import { AboutSection } from './components/homepage/about';
 
 export default async function Home() {
   return (
     <>
       <HeroSection />
-      {/* <AboutSection />
-      <Experience />
+      <AboutSection />
+      {/* <Experience />
       <Skills />
       <Projects />
       <Education />
