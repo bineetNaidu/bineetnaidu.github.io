@@ -1,6 +1,7 @@
 'use client';
 // @flow strict
 import { isValidEmail } from '@/app/utils/check-email';
+import { personalData } from '@/app/utils/data/personal-data';
 import emailjs from '@emailjs/browser';
 import { Options } from '@emailjs/browser/es/types/Options';
 import React, { useState } from 'react';
@@ -48,6 +49,7 @@ export function ContactForm() {
         {
           reply_to: input.email,
           from_name: input.name,
+          to_name: personalData.name,
           message: input.message,
         },
         options
