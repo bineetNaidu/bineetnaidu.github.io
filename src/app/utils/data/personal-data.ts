@@ -9,6 +9,5 @@ export const personalData = {
   github: 'https://github.com/bineetNaidu',
   linkedIn: 'https://www.linkedin.com/in/bineetNaidu',
   twitter: 'https://twitter.com/bineet_naidu',
-  resume:
-    'https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing',
+  resume: '',
 };
