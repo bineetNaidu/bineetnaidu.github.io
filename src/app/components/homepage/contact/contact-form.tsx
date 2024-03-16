@@ -2,6 +2,7 @@
 // @flow strict
 import { isValidEmail } from '@/app/utils/check-email';
 import emailjs from '@emailjs/browser';
+import { Options } from '@emailjs/browser/es/types/Options';
 import React, { useState } from 'react';
 import { TbMailForward } from 'react-icons/tb';
 import { toast } from 'react-toastify';
@@ -36,10 +37,21 @@ export function ContactForm() {
 
     const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
     const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
-    const options = { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY! };
+    const options: Options = {
+      publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+    };
 
     try {
-      const res = await emailjs.send(serviceID, templateID, input, options);
+      const res = await emailjs.send(
+        serviceID,
+        templateID,
+        {
+          reply_to: input.email,
+          from_name: input.name,
+          message: input.message,
+        },
+        options
+      );
 
       if (res.status === 200) {
         toast.success('Message sent successfully!');
