@@ -11,13 +11,15 @@ export function Footer() {
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center">
           <p className="text-sm">
-            © Developed by{' '}
+            <span>© {new Date().getFullYear()}</span>
+            <span> All rights reserved. </span>
+            <span> Developed by </span>
             <Link
               target="_blank"
               href={personalData.github}
               className="text-[#16f2b3]"
             >
-              Bineet Naidu
+              Bineet Naidu.
             </Link>
           </p>
         </div>
